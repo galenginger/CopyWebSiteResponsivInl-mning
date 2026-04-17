@@ -1,4 +1,18 @@
 /* GRUNDINSTÄLLNINGAR */
+:root {
+  --color-bg: #0e0e10;
+  --color-surface: #18181b;
+  --color-surface-2: #1f1f23;
+  --color-border: #2a2a35;
+  --color-purple: #9147ff;
+  --color-purple-hover: #a970ff;
+  --color-purple-dark: #6725D1;
+  --color-purple-dark-hover: #4a2d85;
+  --color-text: #efeff1;
+  --color-text-muted: #adadb8;
+  --color-border-input: #3a3a45;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -6,8 +20,8 @@
 }
 
 body {
-  background-color: #0e0e10;
-  color: #efeff1;
+  background-color: var(--color-bg);
+  color: var(--color-text);
   font-family: Inter, Roobert, "Helvetica Neue", sans-serif;
   font-size: 14px;
 }
@@ -22,13 +36,13 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #18181b;
+  background-color: var(--color-surface);
   height: 50px;
   padding: 0 16px;
   position: sticky;
   top: 0;
   z-index: 100;
-  border-bottom: 1px solid #2a2a35;
+  border-bottom: 1px solid var(--color-border);
 }
 
 .topbar-left {
@@ -50,7 +64,7 @@ a {
 .nav-link {
   font-size: 15px;
   font-weight: 600;
-  color: #efeff1;
+  color: var(--color-text);
   padding: 6px 10px;
   height: 50px;
   display: flex;
@@ -59,12 +73,12 @@ a {
 }
 
 .nav-link:hover {
-  color: #a970ff;
+  color: var(--color-purple-hover);
 }
 
 .nav-link.active {
-  border-bottom: 2px solid #9147ff;
-  color: #efeff1;
+  border-bottom: 2px solid var(--color-purple);
+  color: var(--color-text);
 }
 
 .topbar-center {
@@ -76,19 +90,19 @@ a {
 .search-bar {
   display: flex;
   align-items: center;
-  background-color: #0e0e10;
-  border: 1px solid #3a3a45;
+  background-color: var(--color-bg);
+  border: 1px solid var(--color-border-input);
   border-radius: 4px;
   padding: 6px 12px;
   gap: 8px;
-  color: #adadb8;
+  color: var(--color-text-muted);
 }
 
 .search-bar input {
   background: none;
   border: none;
   outline: none;
-  color: #efeff1;
+  color: var(--color-text);
   width: 100%;
   font-size: 13px;
 }
@@ -101,7 +115,7 @@ a {
 .icon-btn {
   background: none;
   border: none;
-  color: #adadb8;
+  color: var(--color-text-muted);
   font-size: 16px;
   cursor: pointer;
   padding: 6px 8px;
@@ -109,8 +123,8 @@ a {
 }
 
 .icon-btn:hover {
-  background-color: #2a2a35;
-  color: #efeff1;
+  background-color: var(--color-border);
+  color: var(--color-text);
 }
 
 /* LAYOUT */
@@ -123,16 +137,16 @@ a {
 .sidebar {
   width: 240px;
   min-width: 240px;
-  background-color: #1f1f23;
+  background-color: var(--color-surface-2);
   overflow-y: auto;
   padding: 12px 8px;
-  border-right: 1px solid #2a2a35;
+  border-right: 1px solid var(--color-border);
 }
 
 .sidebar-title {
   font-size: 11px;
   font-weight: 700;
-  color: #adadb8;
+  color: var(--color-text-muted);
   letter-spacing: 0.5px;
   padding: 8px 8px 6px;
   text-transform: uppercase;
@@ -147,7 +161,7 @@ a {
 }
 
 .channel:hover {
-  background-color: #2a2a35;
+  background-color: var(--color-border);
 }
 
 .channel-avatar {
@@ -174,7 +188,7 @@ a {
 .channel-game {
   display: block;
   font-size: 11px;
-  color: #adadb8;
+  color: var(--color-text-muted);
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -182,7 +196,7 @@ a {
 
 .channel-viewers {
   font-size: 11px;
-  color: #adadb8;
+  color: var(--color-text-muted);
   white-space: nowrap;
 }
 
@@ -217,7 +231,7 @@ a {
   font-size: 14px;
   font-weight: 700;
   color: #fff;
-  background-color: #6725D1;
+  background-color: var(--color-purple-dark);
   border: none;
   min-width: 350px;
   height: 35px;
@@ -235,7 +249,7 @@ a {
 }
 
 .tab:hover {
-  background-color: #4a2d85;
+  background-color: var(--color-purple-dark-hover);
 }
 
 /* UNDERKATEGORIFLIKAR */
@@ -243,23 +257,23 @@ a {
   display: flex;
   gap: 0;
   margin-bottom: 20px;
-  border-bottom: 1px solid #2a2a35;
+  border-bottom: 1px solid var(--color-border);
 }
 
 .sub-tab {
   padding: 8px 16px;
   font-size: 13px;
   font-weight: 600;
-  color: #adadb8;
+  color: var(--color-text-muted);
 }
 
 .sub-tab:hover {
-  color: #efeff1;
+  color: var(--color-text);
 }
 
 .sub-tab.active {
-  color: #efeff1;
-  border-bottom: 2px solid #9147ff;
+  color: var(--color-text);
+  border-bottom: 2px solid var(--color-purple);
 }
 
 /* FILTERFÄLT */
@@ -275,12 +289,12 @@ a {
 .tag-search {
   display: flex;
   align-items: center;
-  background-color: #1f1f23;
-  border: 1px solid #3a3a45;
+  background-color: var(--color-surface-2);
+  border: 1px solid var(--color-border-input);
   border-radius: 4px;
   padding: 6px 12px;
   gap: 8px;
-  color: #adadb8;
+  color: var(--color-text-muted);
   width: 220px;
 }
 
@@ -288,7 +302,7 @@ a {
   background: none;
   border: none;
   outline: none;
-  color: #efeff1;
+  color: var(--color-text);
   font-size: 13px;
   width: 100%;
 }
@@ -298,14 +312,14 @@ a {
   align-items: center;
   gap: 8px;
   font-size: 13px;
-  color: #adadb8;
+  color: var(--color-text-muted);
 }
 
 .sort-select {
-  background-color: #1f1f23;
-  border: 1px solid #3a3a45;
+  background-color: var(--color-surface-2);
+  border: 1px solid var(--color-border-input);
   border-radius: 4px;
-  color: #efeff1;
+  color: var(--color-text);
   padding: 6px 10px;
   font-size: 13px;
   cursor: pointer;
@@ -329,7 +343,7 @@ a {
 }
 
 .game-card:hover img {
-  outline: 2px solid #9147ff;
+  outline: 2px solid var(--color-purple);
 }
 
 .game-title {
@@ -344,20 +358,20 @@ a {
 
 .game-viewers {
   font-size: 12px;
-  color: #adadb8;
+  color: var(--color-text-muted);
   margin-top: 2px;
 }
 
 .game-tag {
   display: inline-block;
   font-size: 11px;
-  background-color: #1f1f23;
-  border: 1px solid #2a2a35;
+  background-color: var(--color-surface-2);
+  border: 1px solid var(--color-border);
   border-radius: 12px;
   padding: 2px 8px;
   margin-top: 4px;
   margin-right: 4px;
-  color: #adadb8;
+  color: var(--color-text-muted);
 }
 
 /* RESPONSIVITET */
