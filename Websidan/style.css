@@ -13,6 +13,16 @@
   --color-border-input: #3a3a45;
 }
 
+body.light-mode {
+  --color-bg: #ffffff;
+  --color-surface: #f0f0f0;
+  --color-surface-2: #e8e8e8;
+  --color-border: #d0d0d0;
+  --color-text: #0e0e10;
+  --color-text-muted: #55555f;
+  --color-border-input: #bbbbbb;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -243,7 +253,7 @@ a {
 }
 
 .tab-icon {
-  height: 55px;
+  height: 50px;
   width: auto;
   margin-right: -12px
 }

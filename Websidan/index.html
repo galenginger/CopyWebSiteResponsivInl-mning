@@ -31,6 +31,7 @@
     </div>
 
     <div class="topbar-right">
+      <button class="icon-btn" id="theme-toggle"><i class="fas fa-sun"></i></button>
       <button class="icon-btn"><i class="fas fa-bell"></i></button>
       <button class="icon-btn"><i class="fas fa-user-circle"></i></button>
     </div>
@@ -443,6 +444,16 @@
 
   </div>
 
+  <script>
+    const btn = document.getElementById('theme-toggle');
+    const icon = btn.querySelector('i');
+
+    btn.addEventListener('click', () => {
+      document.body.classList.toggle('light-mode');
+      icon.classList.toggle('fa-sun');
+      icon.classList.toggle('fa-moon');
+    });
+  </script>
 </body>
 
 </html>
