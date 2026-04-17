@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Twitch - Bläddra</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- FontAwesome ikonset -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+
+  <!-- TOPPMENY -->
+  <nav class="topbar">
+    <div class="topbar-left">
+      <a href="#" class="logo">
+        <img src="Bilder/twitch-logo-twitch-logo-transparent-twitch-icon-transparent-free-free-png.webp" alt="Twitch"
+          class="logo-img" />
+      </a>
+      <a href="#" class="nav-link">Följer</a>
+      <a href="#" class="nav-link active">Bläddra</a>
+    </div>
+
+    <div class="topbar-center">
+      <form class="search-bar">
+        <i class="fas fa-search"></i>
+        <input type="text" placeholder="Sök" />
+      </form>
+    </div>
+
+    <div class="topbar-right">
+      <button class="icon-btn"><i class="fas fa-bell"></i></button>
+      <button class="icon-btn"><i class="fas fa-user-circle"></i></button>
+    </div>
+  </nav>
+
+  <div class="layout">
+
+    <!-- VÄNSTER SIDEBAR -->
+    <aside class="sidebar">
+      <h2 class="sidebar-title">FÖR DIG</h2>
+
+      <a href="#" class="channel">
+        <img src="https://cataas.com/cat?width=30&height=30&i=1" alt="kanal" class="channel-avatar" />
+        <div class="channel-info">
+          <span class="channel-name">TwitchStreamer1</span>
+          <span class="channel-game">League of Legends</span>
+        </div>
+        <span class="channel-viewers">14,6 k</span>
+      </a>
+
+      <a href="#" class="channel">
+        <img src="https://cataas.com/cat?width=30&height=30&i=2" alt="kanal" class="channel-avatar" />
+        <div class="channel-info">
+          <span class="channel-name">TwitchStreamer2</span>
+          <span class="channel-game">World of Warcraft</span>
+        </div>
+        <span class="channel-viewers">9,2 k</span>
+      </a>
+
+      <a href="#" class="channel">
+        <img src="https://cataas.com/cat?width=30&height=30&i=3" alt="kanal" class="channel-avatar" />
+        <div class="channel-info">
+          <span class="channel-name">TwitchStreamer3</span>
+          <span class="channel-game">Valorant</span>
+        </div>
+        <span class="channel-viewers">5,8 k</span>
+      </a>
+
+      <a href="#" class="channel">
+        <img src="https://cataas.com/cat?width=30&height=30&i=4" alt="kanal" class="channel-avatar" />
+        <div class="channel-info">
+          <span class="channel-name">TwitchStreamer4</span>
+          <span class="channel-game">IRL</span>
+        </div>
+        <span class="channel-viewers">3,1 k</span>
+      </a>
+
+      <a href="#" class="channel">
+        <img src="https://cataas.com/cat?width=30&height=30&i=5" alt="kanal" class="channel-avatar" />
+        <div class="channel-info">
+          <span class="channel-name">TwitchStreamer5</span>
+          <span class="channel-game">Minecraft</span>
+        </div>
+        <span class="channel-viewers">1,9 k</span>
+      </a>
+
+      <h2 class="sidebar-title" style="margin-top: 20px;">REKOMMENDERADE KANALER</h2>
+
+      <a href="#" class="channel">
+        <img src="https://cataas.com/cat?width=30&height=30&i=6" alt="kanal" class="channel-avatar" />
+        <div class="channel-info">
+          <span class="channel-name">RekommendadKanal</span>
+          <span class="channel-game">Chess</span>
+        </div>
+        <span class="channel-viewers">612</span>
+      </a>
+    </aside>
+
+    <!-- HUVUDINNEHÅLL -->
+    <main class="main-content">
+      <h1 class="page-title">Bläddra</h1>
+
+      <!-- Kategoriflikar -->
+      <nav class="category-tabs">
+        <a href="#" class="tab active">Spel <img src="SVG-filer/gaming.svg" alt="Spel" class="tab-icon" /></a>
+        <a href="#" class="tab">IRL <img src="SVG-filer/irl.svg" alt="IRL" class="tab-icon" /></a>
+        <a href="#" class="tab">Musik och DJ:ar <img src="SVG-filer/music.svg" alt="Musik" class="tab-icon" /></a>
+        <a href="#" class="tab">Kreativt <img src="SVG-filer/creative.svg" alt="Kreativt" class="tab-icon" /></a>
+        <a href="#" class="tab">E-sport <img src="SVG-filer/esports.svg" alt="E-sport" class="tab-icon" /></a>
+      </nav>
+
+      <!-- Underkategoriflikar -->
+      <nav class="sub-tabs">
+        <a href="#" class="sub-tab active">Kategorier</a>
+        <a href="#" class="sub-tab">Livekanaler</a>
+      </nav>
+
+      <!-- Filterfält -->
+      <div class="filter-bar">
+        <form class="tag-search">
+          <i class="fas fa-search"></i>
+          <input type="text" placeholder="Sök efter kategoritaggar" />
+        </form>
+        <div class="sort-bar">
+          <span>Sortera på</span>
+          <select class="sort-select">
+            <option>Rekommenderas för dig</option>
+            <option>Tittare (högt till lågt)</option>
+            <option>Tittare (lågt till högt)</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Spelkort-grid -->
+      <section class="games-grid">
+
+        <article class="game-card">
+          <img src="https://static-cdn.jtvnw.net/ttv-boxart/League%20of%20Legends-185x247.jpg"
+            alt="League of Legends" />
+          <h3 class="game-title">League of Legends</h3>
+          <p class="game-viewers"><i class="fas fa-eye"></i> 98,2 k tittare</p>
+          <span class="game-tag">MOBA</span>
+          <span class="game-tag">Fighting</span>
+        </article>
+
+        <article class="game-card">
+          <img src="https://static-cdn.jtvnw.net/ttv-boxart/World%20of%20Warcraft-185x247.jpg"
+            alt="World of Warcraft" />
+          <h3 class="game-title">World of Warcraft</h3>
+          <p class="game-viewers"><i class="fas fa-eye"></i> 37,7 k tittare</p>
+          <span class="game-tag">RPG</span>
+          <span class="game-tag">MMO</span>
+        </article>
+
+        <article class="game-card">
+          <img src="https://static-cdn.jtvnw.net/ttv-boxart/Valorant-185x247.jpg" alt="Valorant" />
+          <h3 class="game-title">Valorant</h3>
+          <p class="game-viewers"><i class="fas fa-eye"></i> 44,9 k tittare</p>
+          <span class="game-tag">Shooter</span>
+          <span class="game-tag">Action</span>
+        </article>
+
+        <article class="game-card">
+          <img src="https://static-cdn.jtvnw.net/ttv-boxart/27471-185x247.jpg" alt="Minecraft" />
+          <h3 class="game-title">Minecraft</h3>
+          <p class="game-viewers"><i class="fas fa-eye"></i> 33,4 k tittare</p>
+          <span class="game-tag">Survival</span>
+          <span class="game-tag">Adventure</span>
+        </article>
+
+        <article class="game-card">
+          <img src="https://static-cdn.jtvnw.net/ttv-boxart/Grand%20Theft%20Auto%20V-185x247.jpg" alt="GTA Online" />
+          <h3 class="game-title">GTA Online</h3>
+          <p class="game-viewers"><i class="fas fa-eye"></i> 28,1 k tittare</p>
+          <span class="game-tag">RPG</span>
+          <span class="game-tag">Open World</span>
+        </article>
+
+        <article class="game-card">
+          <img src="https://static-cdn.jtvnw.net/ttv-boxart/Chess-185x247.jpg" alt="Chess" />
+          <h3 class="game-title">Chess</h3>
+          <p class="game-viewers"><i class="fas fa-eye"></i> 21,6 k tittare</p>
+          <span class="game-tag">Strategy</span>
+          <span class="game-tag">Board Games</span>
+        </article>
+
+        <article class="game-card">
+          <img src="https://static-cdn.jtvnw.net/ttv-boxart/515025-185x247.jpg" alt="Overwatch 2" />
+          <h3 class="game-title">Overwatch 2</h3>
+          <p class="game-viewers"><i class="fas fa-eye"></i> 15,3 k tittare</p>
+          <span class="game-tag">Shooter</span>
+          <span class="game-tag">Action</span>
+        </article>
+
+        <article class="game-card">
+          <img src="https://static-cdn.jtvnw.net/ttv-boxart/Rust-185x247.jpg" alt="Rust" />
+          <h3 class="game-title">Rust</h3>
+          <p class="game-viewers"><i class="fas fa-eye"></i> 12,5 k tittare</p>
+          <span class="game-tag">Survival</span>
+          <span class="game-tag">Action</span>
+        </article>
+
+        <article class="game-card">
+          <img src="https://static-cdn.jtvnw.net/ttv-boxart/Tibia-185x247.jpg" alt="Tibia" />
+          <h3 class="game-title">Tibia</h3>
+          <p class="game-viewers"><i class="fas fa-eye"></i> 4,4 k tittare</p>
+          <span class="game-tag">Rollspel</span>
+          <span class="game-tag">Äventyrsspel</span>
+        </article>
+
+        <article class="game-card">
+          <img src="https://static-cdn.jtvnw.net/ttv-boxart/Just%20Chatting-185x247.jpg" alt="Bara chatta" />
+          <h3 class="game-title">Bara chatta</h3>
+          <p class="game-viewers"><i class="fas fa-eye"></i> 191,3 k tittare</p>
+          <span class="game-tag">IRL</span>
+        </article>
+
+        <article class="game-card">
+          <img src="https://static-cdn.jtvnw.net/ttv-boxart/Path%20of%20Exile-185x247.jpg" alt="Path of Exile" />
+          <h3 class="game-title">Path of Exile</h3>
+          <p class="game-viewers"><i class="fas fa-eye"></i> 6,8 k tittare</p>
+          <span class="game-tag">Rollspel</span>
+          <span class="game-tag">Action</span>
+        </article>
+
+        <article class="game-card">
+          <img src="https://static-cdn.jtvnw.net/ttv-boxart/Fortnite-185x247.jpg" alt="Fortnite" />
+          <h3 class="game-title">Fortnite</h3>
+          <p class="game-viewers"><i class="fas fa-eye"></i> 62,4 k tittare</p>
+          <span class="game-tag">Shooter</span>
+          <span class="game-tag">Action</span>
+        </article>
+
+        <article class="game-card">
+          <img src="https://static-cdn.jtvnw.net/ttv-boxart/32399-185x247.jpg" alt="Counter-Strike 2" />
+          <h3 class="game-title">Counter-Strike 2</h3>
+          <p class="game-viewers"><i class="fas fa-eye"></i> 58,2 k tittare</p>
+          <span class="game-tag">FPS</span>
+          <span class="game-tag">Shooter</span>
+        </article>
+
+        <article class="game-card">
+          <img
+            src="https://static-cdn.jtvnw.net/ttv-boxart/Age%20of%20Empires%20II%3A%20Definitive%20Edition-185x247.jpg"
+            alt="Age of Empires II" />
+          <h3 class="game-title">Age of Empires II</h3>
+          <p class="game-viewers"><i class="fas fa-eye"></i> 515 tittare</p>
+          <span class="game-tag">Strategi</span>
+          <span class="game-tag">RTS</span>
+        </article>
+
+        <article class="game-card">
+          <img src="https://static-cdn.jtvnw.net/ttv-boxart/Apex%20Legends-185x247.jpg" alt="Apex Legends" />
+          <h3 class="game-title">Apex Legends</h3>
+          <p class="game-viewers"><i class="fas fa-eye"></i> 41,2 k tittare</p>
+          <span class="game-tag">Shooter</span>
+          <span class="game-tag">Action</span>
+        </article>
+
+        <article class="game-card">
+          <img src="https://static-cdn.jtvnw.net/ttv-boxart/Hearthstone-185x247.jpg" alt="Hearthstone" />
+          <h3 class="game-title">Hearthstone</h3>
+          <p class="game-viewers"><i class="fas fa-eye"></i> 12,6 k tittare</p>
+          <span class="game-tag">Strategi</span>
+          <span class="game-tag">Kortspel</span>
+        </article>
+
+        <article class="game-card">
+          <img src="https://static-cdn.jtvnw.net/ttv-boxart/Teamfight%20Tactics-185x247.jpg" alt="Teamfight Tactics" />
+          <h3 class="game-title">Teamfight Tactics</h3>
+          <p class="game-viewers"><i class="fas fa-eye"></i> 7,3 k tittare</p>
+          <span class="game-tag">Strategi</span>
+        </article>
+
+        <article class="game-card">
+          <img src="https://static-cdn.jtvnw.net/ttv-boxart/Dota%202-185x247.jpg" alt="Dota 2" />
+          <h3 class="game-title">Dota 2</h3>
+          <p class="game-viewers"><i class="fas fa-eye"></i> 18,7 k tittare</p>
+          <span class="game-tag">MOBA</span>
+          <span class="game-tag">Strategi</span>
+        </article>
+
+        <article class="game-card">
+          <img src="https://static-cdn.jtvnw.net/ttv-boxart/Elden%20Ring-185x247.jpg" alt="Elden Ring" />
+          <h3 class="game-title">Elden Ring</h3>
+          <p class="game-viewers"><i class="fas fa-eye"></i> 7,1 k tittare</p>
+          <span class="game-tag">Rollspel</span>
+          <span class="game-tag">Äventyrsspel</span>
+        </article>
+
+        <article class="game-card">
+          <img src="https://static-cdn.jtvnw.net/ttv-boxart/Dofus-185x247.jpg" alt="Dofus" />
+          <h3 class="game-title">Dofus</h3>
+          <p class="game-viewers"><i class="fas fa-eye"></i> 4 k tittare</p>
+          <span class="game-tag">Rollspel</span>
+          <span class="game-tag">Strategi</span>
+        </article>
+
+        <article class="game-card">
+          <img src="https://static-cdn.jtvnw.net/ttv-boxart/PLAYERUNKNOWN%27S%20BATTLEGROUNDS-185x247.jpg"
+            alt="PUBG Battlegrounds" />
+          <h3 class="game-title">PUBG Battlegrounds</h3>
+          <p class="game-viewers"><i class="fas fa-eye"></i> 8,2 k tittare</p>
+          <span class="game-tag">FPS</span>
+          <span class="game-tag">Shooter</span>
+        </article>
+
+        <article class="game-card">
+          <img src="https://static-cdn.jtvnw.net/ttv-boxart/Diablo%20IV-185x247.jpg" alt="Diablo IV" />
+          <h3 class="game-title">Diablo IV</h3>
+          <p class="game-viewers"><i class="fas fa-eye"></i> 9,3 k tittare</p>
+          <span class="game-tag">Rollspel</span>
+          <span class="game-tag">Action</span>
+        </article>
+
+        <article class="game-card">
+          <img src="https://static-cdn.jtvnw.net/ttv-boxart/Baldur%27s%20Gate%203-185x247.jpg" alt="Baldur's Gate 3" />
+          <h3 class="game-title">Baldur's Gate 3</h3>
+          <p class="game-viewers"><i class="fas fa-eye"></i> 11,2 k tittare</p>
+          <span class="game-tag">Rollspel</span>
+          <span class="game-tag">Äventyrsspel</span>
+        </article>
+
+        <article class="game-card">
+          <img src="https://static-cdn.jtvnw.net/ttv-boxart/Rocket%20League-185x247.jpg" alt="Rocket League" />
+          <h3 class="game-title">Rocket League</h3>
+          <p class="game-viewers"><i class="fas fa-eye"></i> 8,4 k tittare</p>
+          <span class="game-tag">Sport</span>
+          <span class="game-tag">Racing</span>
+        </article>
+
+        <article class="game-card">
+          <img src="https://static-cdn.jtvnw.net/ttv-boxart/Tom%20Clancy%27s%20Rainbow%20Six%20Siege-185x247.jpg"
+            alt="Rainbow Six Siege" />
+          <h3 class="game-title">Rainbow Six Siege</h3>
+          <p class="game-viewers"><i class="fas fa-eye"></i> 17,9 k tittare</p>
+          <span class="game-tag">Shooter</span>
+          <span class="game-tag">Taktik</span>
+        </article>
+
+        <article class="game-card">
+          <img src="https://static-cdn.jtvnw.net/ttv-boxart/Cyberpunk%202077-185x247.jpg" alt="Cyberpunk 2077" />
+          <h3 class="game-title">Cyberpunk 2077</h3>
+          <p class="game-viewers"><i class="fas fa-eye"></i> 6,1 k tittare</p>
+          <span class="game-tag">Rollspel</span>
+          <span class="game-tag">Open World</span>
+        </article>
+
+        <article class="game-card">
+          <img src="https://static-cdn.jtvnw.net/ttv-boxart/Genshin%20Impact-185x247.jpg" alt="Genshin Impact" />
+          <h3 class="game-title">Genshin Impact</h3>
+          <p class="game-viewers"><i class="fas fa-eye"></i> 14,3 k tittare</p>
+          <span class="game-tag">Rollspel</span>
+          <span class="game-tag">Action</span>
+        </article>
+
+        <article class="game-card">
+          <img src="https://static-cdn.jtvnw.net/ttv-boxart/Final%20Fantasy%20XIV%20Online-185x247.jpg"
+            alt="Final Fantasy XIV" />
+          <h3 class="game-title">Final Fantasy XIV</h3>
+          <p class="game-viewers"><i class="fas fa-eye"></i> 9,7 k tittare</p>
+          <span class="game-tag">Rollspel</span>
+          <span class="game-tag">MMO</span>
+        </article>
+
+        <article class="game-card">
+          <img src="https://static-cdn.jtvnw.net/ttv-boxart/Dead%20by%20Daylight-185x247.jpg" alt="Dead by Daylight" />
+          <h3 class="game-title">Dead by Daylight</h3>
+          <p class="game-viewers"><i class="fas fa-eye"></i> 7,8 k tittare</p>
+          <span class="game-tag">Horror</span>
+          <span class="game-tag">Survival</span>
+        </article>
+
+        <article class="game-card">
+          <img src="https://static-cdn.jtvnw.net/ttv-boxart/Stardew%20Valley-185x247.jpg" alt="Stardew Valley" />
+          <h3 class="game-title">Stardew Valley</h3>
+          <p class="game-viewers"><i class="fas fa-eye"></i> 5,2 k tittare</p>
+          <span class="game-tag">Simulering</span>
+          <span class="game-tag">Indiespel</span>
+        </article>
+
+        <article class="game-card">
+          <img src="https://static-cdn.jtvnw.net/ttv-boxart/Fall%20Guys-185x247.jpg" alt="Fall Guys" />
+          <h3 class="game-title">Fall Guys</h3>
+          <p class="game-viewers"><i class="fas fa-eye"></i> 3,6 k tittare</p>
+          <span class="game-tag">Arkad</span>
+          <span class="game-tag">Plattform</span>
+        </article>
+
+        <article class="game-card">
+          <img src="https://static-cdn.jtvnw.net/ttv-boxart/StarCraft%20II-185x247.jpg" alt="StarCraft II" />
+          <h3 class="game-title">StarCraft II</h3>
+          <p class="game-viewers"><i class="fas fa-eye"></i> 4,9 k tittare</p>
+          <span class="game-tag">Strategi</span>
+          <span class="game-tag">RTS</span>
+        </article>
+
+        <article class="game-card">
+          <img src="https://static-cdn.jtvnw.net/ttv-boxart/Hades-185x247.jpg" alt="Hades" />
+          <h3 class="game-title">Hades</h3>
+          <p class="game-viewers"><i class="fas fa-eye"></i> 2,8 k tittare</p>
+          <span class="game-tag">Action</span>
+          <span class="game-tag">Indiespel</span>
+        </article>
+
+        <article class="game-card">
+          <img src="https://static-cdn.jtvnw.net/ttv-boxart/Among%20Us-185x247.jpg" alt="Among Us" />
+          <h3 class="game-title">Among Us</h3>
+          <p class="game-viewers"><i class="fas fa-eye"></i> 1,9 k tittare</p>
+          <span class="game-tag">Strategi</span>
+          <span class="game-tag">Indiespel</span>
+        </article>
+
+        <article class="game-card">
+          <img src="https://static-cdn.jtvnw.net/ttv-boxart/The%20Sims%204-185x247.jpg" alt="The Sims 4" />
+          <h3 class="game-title">The Sims 4</h3>
+          <p class="game-viewers"><i class="fas fa-eye"></i> 4,1 k tittare</p>
+          <span class="game-tag">Simulering</span>
+          <span class="game-tag">Livsstil</span>
+        </article>
+
+        <article class="game-card">
+          <img src="https://static-cdn.jtvnw.net/ttv-boxart/Call%20of%20Duty%3A%20Warzone-185x247.jpg" alt="Warzone" />
+          <h3 class="game-title">Warzone</h3>
+          <p class="game-viewers"><i class="fas fa-eye"></i> 22,5 k tittare</p>
+          <span class="game-tag">Shooter</span>
+          <span class="game-tag">Battle Royale</span>
+        </article>
+
+        <article class="game-card">
+          <img src="https://static-cdn.jtvnw.net/ttv-boxart/Hollow%20Knight-185x247.jpg" alt="Hollow Knight" />
+          <h3 class="game-title">Hollow Knight</h3>
+          <p class="game-viewers"><i class="fas fa-eye"></i> 1,4 k tittare</p>
+          <span class="game-tag">Action</span>
+          <span class="game-tag">Indiespel</span>
+        </article>
+
+      </section>
+    </main>
+
+  </div>
+
+</body>
+
+</html>
