@@ -229,6 +229,7 @@ a {
   gap: 8px;
   margin-bottom: 12px;
   flex-wrap: wrap;
+  scrollbar-width: none;
 }
 
 .tab {
