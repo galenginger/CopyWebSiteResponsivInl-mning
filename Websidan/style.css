@@ -425,8 +425,9 @@ a {
     overflow-x: auto;
     flex-wrap: nowrap;
     padding-bottom: 4px;
+    scrollbar-width: none;
   }
-
+  
   .tab {
     padding: 6px 10px;
     font-size: 12px;
